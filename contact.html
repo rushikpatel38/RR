@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us | Request a Consultation | R&amp;R</title>
+<meta name="description" content="Get in touch with R&amp;R to talk about cloud, cybersecurity, managed IT, infrastructure, or digital solutions for your business.">
+<link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Syne:wght@700&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-root="./" data-page="contact">
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header" id="site-header"></header>
+
+<main id="main">
+  <section class="page-hero">
+    <div class="net-watermark" data-net-diagram data-labels="false" aria-hidden="true" style="opacity:0.18;"></div>
+    <div class="container" style="position:relative;">
+      <p class="breadcrumb"><a href="index.html">Home</a> / Contact</p>
+      <p class="eyebrow on-dark">Contact</p>
+      <h1>Let&rsquo;s talk about your technology needs</h1>
+      <p class="lede">Tell us a little about your business and what you're trying to solve. We'll follow up to schedule a consultation.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container two-col" style="align-items:flex-start;">
+
+      <div>
+        <form id="contact-form" novalidate>
+          <div class="form-grid">
+            <div class="field">
+              <label for="first-name">First name <span class="req">*</span></label>
+              <input type="text" id="first-name" name="first-name" autocomplete="given-name" required>
+            </div>
+            <div class="field">
+              <label for="last-name">Last name <span class="req">*</span></label>
+              <input type="text" id="last-name" name="last-name" autocomplete="family-name" required>
+            </div>
+            <div class="field">
+              <label for="email">Business email <span class="req">*</span></label>
+              <input type="email" id="email" name="email" autocomplete="email" required>
+            </div>
+            <div class="field">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" autocomplete="tel">
+            </div>
+            <div class="field">
+              <label for="company">Company </label>
+              <input type="text" id="company" name="company" autocomplete="organization">
+            </div>
+            <div class="field">
+              <label for="industry">Industry</label>
+              <select id="industry" name="industry">
+                <option value="">Select an industry</option>
+                <option>Healthcare</option>
+                <option>Financial Services</option>
+                <option>Retail</option>
+                <option>Restaurants &amp; Hospitality</option>
+                <option>Gas Stations &amp; Convenience</option>
+                <option>Manufacturing</option>
+                <option>Professional Services</option>
+                <option>Small / Mid-Sized Business</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="field full">
+              <label for="service">Service needed <span class="req">*</span></label>
+              <select id="service" name="service" required>
+                <option value="">Select a service</option>
+                <option>Cloud Solutions</option>
+                <option>Cybersecurity</option>
+                <option>Managed IT</option>
+                <option>IT Infrastructure</option>
+                <option>Digital Solutions</option>
+                <option>IT Consulting</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="field full">
+              <label for="message">Message <span class="req">*</span></label>
+              <textarea id="message" name="message" required placeholder="Tell us a bit about your environment and what you're looking to solve."></textarea>
+            </div>
+            <!-- honeypot field: hidden from people, left blank by real visitors, used to catch automated spam submissions -->
+            <div class="field full" style="position:absolute;left:-9999px;" aria-hidden="true">
+              <label for="company-website">Website</label>
+              <input type="text" id="company-website" name="company-website" tabindex="-1" autocomplete="off">
+            </div>
+          </div>
+
+          <p class="form-note" style="margin-top:18px;">Fields marked <span class="req">*</span> are required. We'll only use this information to respond to your request.</p>
+
+          <div style="margin-top:22px;display:flex;gap:14px;flex-wrap:wrap;">
+            <button type="submit" class="btn btn-primary">Submit Request</button>
+            <a class="btn btn-outline-light" href="mailto:[business-email]">Request a Consultation by Email</a>
+          </div>
+        </form>
+
+        <div id="contact-success" class="empty-state" style="display:none;margin-top:8px;">
+          <p>Thanks &mdash; your request has been received. We'll be in touch shortly.</p>
+        </div>
+      </div>
+
+      <aside>
+        <div class="card" style="margin-bottom:20px;">
+          <h3>Contact details</h3>
+          <div class="stack-gap">
+            <div><strong>Email</strong><p style="margin:2px 0 0;">rrtechno</p></div>
+            <div><strong>Phone</strong><p style="margin:2px 0 0;">(732) 347-4837</p></div>
+            <div><strong>Location</strong><p style="margin:2px 0 0;">Fully remote &mdash; no physical office</p></div>
+            <div><strong>Hours</strong><p style="margin:2px 0 0;">Monday – Friday: 9:00 AM – 5:00 PM</p></div>
+          </div>
+        </div>
+        <div class="card">
+          <h3>What happens next</h3>
+          <ul class="mini-list" style="margin:0;">
+            <li>We review your request and follow up to schedule a call.</li>
+            <li>We discuss your environment and what you're trying to solve.</li>
+            <li>If it's a fit, we scope an assessment or next step together.</li>
+          </ul>
+        </div>
+      </aside>
+
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer" id="site-footer"></footer>
+<script src="assets/js/main.js"></script>
+<script>
+  (function () {
+    var form = document.getElementById("contact-form");
+    if (!form) return;
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      if (!form.checkValidity()) { form.reportValidity(); return; }
+      if (form.elements["company-website"].value) return; // honeypot triggered, silently drop
+      form.style.display = "none";
+      document.getElementById("contact-success").style.display = "block";
+    });
+  })();
+</script>
+</body>
+</html>
