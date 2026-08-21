@@ -46,7 +46,7 @@
             </div>
             <div class="field">
               <label for="phone">Phone</label>
-              <input type="tel" id="phone" name="phone" autocomplete="tel">
+              <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" maxlength="10"autocomplete="tel">
             </div>
             <div class="field">
               <label for="company">Company </label>
@@ -108,9 +108,9 @@
         <div class="card" style="margin-bottom:20px;">
           <h3>Contact details</h3>
           <div class="stack-gap">
-            <div><strong>Email</strong><p style="margin:2px 0 0;">rrtechno</p></div>
+            <div><strong>Email</strong><p style="margin:2px 0 0;">rrtech.ai</p></div>
             <div><strong>Phone</strong><p style="margin:2px 0 0;">(732) 347-4837</p></div>
-            <div><strong>Location</strong><p style="margin:2px 0 0;">Fully remote &mdash; no physical office</p></div>
+            <div><strong>Location</strong><p style="margin:2px 0 0;">843 Langley Drive Southeast, Concord, NC 28025</p></div>
             <div><strong>Hours</strong><p style="margin:2px 0 0;">Monday – Friday: 9:00 AM – 5:00 PM</p></div>
           </div>
         </div>
@@ -134,6 +134,20 @@
   (function () {
     var form = document.getElementById("contact-form");
     if (!form) return;
+
+    var params = new URLSearchParams(window.location.search);
+    var service = params.get("service");
+    var resource = params.get("resource");
+    if (service) {
+      var serviceField = form.elements["service"];
+      for (var i = 0; i < serviceField.options.length; i++) {
+        if (serviceField.options[i].value === service) { serviceField.selectedIndex = i; break; }
+      }
+    }
+    if (resource) {
+      form.elements["message"].value = "I'm interested in the " + resource + ".";
+    }
+
     form.addEventListener("submit", function (e) {
       e.preventDefault();
       if (!form.checkValidity()) { form.reportValidity(); return; }

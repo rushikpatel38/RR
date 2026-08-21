@@ -120,9 +120,7 @@
       '<li><a href="' + root + 'industries.html#small-business">Small Business</a></li>' +
       "</ul></div>" +
       '<div class="footer-col"><h5>Resources</h5><ul>' +
-      '<li><a href="' + root + 'resources.html#blog">Blog</a></li>' +
-      '<li><a href="' + root + 'resources.html#case-studies">Case Studies</a></li>' +
-      '<li><a href="' + root + 'resources.html#guides">Guides</a></li>' +
+      '<li><a href="' + root + 'resources.html#resources">Free Assessments</a></li>' +
       '<li><a href="' + root + 'resources.html#faqs">FAQs</a></li>' +
       "</ul></div>" +
       "</div>" +
